@@ -1,0 +1,55 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cat { fill: #ffffff; stroke: #000000; stroke-width: 2; }
+    .cat-face { fill: none; stroke: #000000; stroke-width: 2; }
+    .cat-eye { fill: #000000; }
+    .cat-pupil { fill: #ffffff; }
+    .keyboard { fill: #f0f0f0; stroke: #000000; stroke-width: 2; }
+    .key { fill: #ffffff; stroke: #000000; stroke-width: 1; }
+    .screen { fill: #ffffff; stroke: #000000; stroke-width: 2; }
+    .screen-text { fill: #000000; font-family: Arial; font-size: 8px; }
+    .thought-bubble { fill: #ffffff; stroke: #000000; stroke-width: 1.5; }
+    .bubble-connector { fill: #ffffff; stroke: #000000; stroke-width: 1.5; }
+  </style>
+  
+  <!-- Computer Screen -->
+  <rect class="screen" x="50" y="40" width="100" height="70" rx="5" />
+  <rect x="55" y="45" width="90" height="50" fill="#f5f5f5" stroke="#cccccc" />
+  <text class="screen-text" x="60" y="60">Enter your topic:</text>
+  <rect x="60" y="65" width="80" height="20" fill="#ffffff" stroke="#000000" />
+  <text class="screen-text" x="65" y="78">Photosynthesis</text>
+  
+  <!-- Computer Base -->
+  <rect class="keyboard" x="70" y="110" width="60" height="10" rx="2" />
+  <rect class="keyboard" x="40" y="120" width="120" height="30" rx="5" />
+  
+  <!-- Keyboard Keys (simplified) -->
+  <rect class="key" x="45" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="60" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="75" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="90" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="105" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="120" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="135" y="125" width="10" height="10" rx="2" />
+  <rect class="key" x="50" y="140" width="10" height="10" rx="2" />
+  <rect class="key" x="65" y="140" width="10" height="10" rx="2" />
+  <rect class="key" x="80" y="140" width="50" height="10" rx="2" />
+  <rect class="key" x="135" y="140" width="10" height="10" rx="2" />
+  
+  <!-- Cat -->
+  <circle class="cat" cx="170" cy="60" r="20" /> <!-- Head -->
+  <path class="cat" d="M160,45 L155,30 L165,40 Z" /> <!-- Left Ear -->
+  <path class="cat" d="M180,45 L185,30 L175,40 Z" /> <!-- Right Ear -->
+  <circle class="cat-eye" cx="162" cy="55" r="3" /> <!-- Left Eye -->
+  <circle class="cat-eye" cx="178" cy="55" r="3" /> <!-- Right Eye -->
+  <circle class="cat-pupil" cx="162" cy="54" r="1" /> <!-- Left Pupil -->
+  <circle class="cat-pupil" cx="178" cy="54" r="1" /> <!-- Right Pupil -->
+  <path class="cat-face" d="M170,60 L167,63 L173,63 Z" /> <!-- Nose -->
+  <path class="cat-face" d="M167,67 Q170,70 173,67" /> <!-- Mouth -->
+  
+  <!-- Thought Bubble -->
+  <ellipse class="bubble-connector" cx="155" cy="40" rx="3" ry="2" />
+  <ellipse class="bubble-connector" cx="150" cy="35" rx="4" ry="3" />
+  <ellipse class="thought-bubble" cx="135" cy="25" rx="15" ry="10" />
+  <text class="screen-text" x="125" y="28">What topic?</text>
+</svg>

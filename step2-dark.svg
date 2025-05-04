@@ -1,0 +1,63 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cat { fill: #1e1e1e; stroke: #ffffff; stroke-width: 2; }
+    .cat-face { fill: none; stroke: #ffffff; stroke-width: 2; }
+    .cat-eye { fill: #ffffff; }
+    .cat-pupil { fill: #1e1e1e; }
+    .machine { fill: #333333; stroke: #ffffff; stroke-width: 2; }
+    .machine-detail { fill: none; stroke: #ffffff; stroke-width: 1.5; }
+    .machine-light { fill: #ff5252; stroke: #ffffff; stroke-width: 1; }
+    .machine-button { fill: #4caf50; stroke: #ffffff; stroke-width: 1; }
+    .image-frame { fill: #1e1e1e; stroke: #ffffff; stroke-width: 2; }
+    .image-content { fill: #1e1e1e; stroke: #ffffff; stroke-width: 1; }
+    .arrow { fill: none; stroke: #ffffff; stroke-width: 2; stroke-dasharray: 5,3; }
+    .arrow-head { fill: #ffffff; }
+    .thought-bubble { fill: #1e1e1e; stroke: #ffffff; stroke-width: 1.5; }
+    .bubble-connector { fill: #1e1e1e; stroke: #ffffff; stroke-width: 1.5; }
+    .sun { fill: #FFC107; stroke: #ffffff; stroke-width: 1; }
+    .leaf { fill: #4CAF50; stroke: #ffffff; stroke-width: 1; }
+  </style>
+  
+  <!-- AI Machine -->
+  <rect class="machine" x="40" y="60" width="80" height="100" rx="10" />
+  <circle class="machine-light" cx="60" cy="80" r="5" />
+  <circle class="machine-light" cx="80" cy="80" r="5" />
+  <circle class="machine-light" cx="100" cy="80" r="5" />
+  <rect class="machine-button" x="55" cy="100" width="50" height="10" rx="5" />
+  <rect class="machine-detail" x="50" y="120" width="60" height="30" rx="5" />
+  <line class="machine-detail" x1="55" y1="130" x2="105" y2="130" />
+  <line class="machine-detail" x1="55" y1="140" x2="105" y2="140" />
+  
+  <!-- Cat Scientist -->
+  <circle class="cat" cx="170" cy="60" r="20" /> <!-- Head -->
+  <path class="cat" d="M160,45 L155,30 L165,40 Z" /> <!-- Left Ear -->
+  <path class="cat" d="M180,45 L185,30 L175,40 Z" /> <!-- Right Ear -->
+  <circle class="cat-eye" cx="162" cy="55" r="3" /> <!-- Left Eye -->
+  <circle class="cat-eye" cx="178" cy="55" r="3" /> <!-- Right Eye -->
+  <circle class="cat-pupil" cx="162" cy="54" r="1" /> <!-- Left Pupil -->
+  <circle class="cat-pupil" cx="178" cy="54" r="1" /> <!-- Right Pupil -->
+  <path class="cat-face" d="M170,60 L167,63 L173,63 Z" /> <!-- Nose -->
+  <path class="cat-face" d="M167,67 Q170,70 173,67" /> <!-- Mouth -->
+  
+  <!-- Lab Coat -->
+  <path class="cat" d="M150,80 L170,60 L190,80 L190,120 L150,120 Z" />
+  
+  <!-- Generated Images -->
+  <rect class="image-frame" x="140" y="100" width="50" height="40" rx="5" />
+  
+  <!-- Simple Photosynthesis Sketch Inside Frame -->
+  <circle class="sun" cx="150" cy="110" r="5" />
+  <path class="leaf" d="M165,120 Q175,110 165,100 Q155,110 165,120 Z" />
+  <line stroke="#ffffff" x1="165" y1="120" x2="165" y2="130" />
+  <line stroke="#ffffff" stroke-dasharray="2,1" x1="150" y1="110" x2="165" y2="115" />
+  
+  <!-- Arrow from Machine to Images -->
+  <path class="arrow" d="M120,110 C130,110 130,120 140,120" />
+  <polygon class="arrow-head" points="140,120 135,115 135,125" />
+  
+  <!-- Thought Bubble -->
+  <ellipse class="bubble-connector" cx="155" cy="40" rx="3" ry="2" />
+  <ellipse class="bubble-connector" cx="150" cy="35" rx="4" ry="3" />
+  <ellipse class="thought-bubble" cx="135" cy="25" rx="20" ry="12" />
+  <text fill="#ffffff" font-family="Arial" font-size="6" x="120" y="28">Creating images!</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cat { fill: #ffffff; stroke: #000000; stroke-width: 2; }
+    .cat-face { fill: none; stroke: #000000; stroke-width: 2; }
+    .cat-eye { fill: #000000; }
+    .cat-pupil { fill: #ffffff; }
+    .video-frame { fill: #f0f0f0; stroke: #000000; stroke-width: 2; }
+    .video-screen { fill: #ffffff; stroke: #000000; stroke-width: 1; }
+    .video-control { fill: #e0e0e0; stroke: #000000; stroke-width: 1; }
+    .video-button { fill: #4caf50; stroke: #000000; stroke-width: 1; }
+    .image-frame { fill: #ffffff; stroke: #000000; stroke-width: 1.5; }
+    .arrow { fill: none; stroke: #000000; stroke-width: 2; stroke-dasharray: 5,3; }
+    .arrow-head { fill: #000000; }
+    .sound-wave { fill: none; stroke: #000000; stroke-width: 1; }
+    .sun { fill: #FFC107; stroke: #000000; stroke-width: 1; }
+    .leaf { fill: #4CAF50; stroke: #000000; stroke-width: 1; }
+    .speech-bubble { fill: #ffffff; stroke: #000000; stroke-width: 1.5; }
+    .bubble-pointer { fill: #ffffff; stroke: #000000; stroke-width: 1.5; }
+  </style>
+  
+  <!-- Video Player -->
+  <rect class="video-frame" x="40" y="40" width="120" height="90" rx="5" />
+  <rect class="video-screen" x="45" y="45" width="110" height="70" />
+  
+  <!-- Video Content (Simple Photosynthesis Animation) -->
+  <circle class="sun" cx="70" cy="65" r="10" />
+  <path class="leaf" d="M100,80 Q115,65 100,50 Q85,65 100,80 Z" />
+  <line stroke="#000000" x1="100" y1="80" x2="100" y2="95" />
+  <line stroke="#000000" stroke-dasharray="2,1" x1="70" y1="65" x2="100" y2="70" />
+  
+  <!-- Video Controls -->
+  <rect class="video-control" x="45" y="115" width="110" height="10" rx="2" />
+  <circle class="video-button" cx="55" cy="120" r="4" /> <!-- Play button -->
+  <rect class="video-control" x="65" y="118" width="50" height="4" rx="2" /> <!-- Progress bar -->
+  <circle class="video-button" cx="145" cy="120" r="4" /> <!-- Volume button -->
+  
+  <!-- Sound Waves -->
+  <path class="sound-wave" d="M150,110 Q155,105 150,100" />
+  <path class="sound-wave" d="M155,115 Q165,105 155,95" />
+  <path class="sound-wave" d="M160,120 Q175,105 160,90" />
+  
+  <!-- Cat Teacher -->
+  <circle class="cat" cx="170" cy="150" r="20" /> <!-- Head -->
+  <path class="cat" d="M160,135 L155,120 L165,130 Z" /> <!-- Left Ear -->
+  <path class="cat" d="M180,135 L185,120 L175,130 Z" /> <!-- Right Ear -->
+  <circle class="cat-eye" cx="162" cy="145" r="3" /> <!-- Left Eye -->
+  <circle class="cat-eye" cx="178" cy="145" r="3" /> <!-- Right Eye -->
+  <circle class="cat-pupil" cx="162" cy="144" r="1" /> <!-- Left Pupil -->
+  <circle class="cat-pupil" cx="178" cy="144" r="1" /> <!-- Right Pupil -->
+  <path class="cat-face" d="M170,150 L167,153 L173,153 Z" /> <!-- Nose -->
+  <path class="cat-face" d="M167,157 Q170,160 173,157" /> <!-- Mouth -->
+  
+  <!-- Speech Bubble -->
+  <path class="speech-bubble" d="M120,140 Q120,130 130,130 L160,130 Q170,130 170,120 L170,110 Q170,100 160,100 L100,100 Q90,100 90,110 L90,130 Q90,140 100,140 Z" />
+  <path class="bubble-pointer" d="M120,140 L130,150 L140,140" />
+  
+  <!-- Speech Text -->
+  <text fill="#000000" font-family="Arial" font-size="6" x="100" y="115">
+    During photosynthesis, 
+    plants use sunlight to 
+    create energy!
+  </text>
+  
+  <!-- Multiple Images to Video Transition -->
+  <rect class="image-frame" x="30" y="160" width="25" height="20" />
+  <rect class="image-frame" x="60" y="160" width="25" height="20" />
+  <rect class="image-frame" x="90" y="160" width="25" height="20" />
+  
+  <!-- Arrow from Images to Video -->
+  <path class="arrow" d="M75,160 C75,140 75,140 75,130" />
+  <polygon class="arrow-head" points="75,130 70,135 80,135" />
+</svg>

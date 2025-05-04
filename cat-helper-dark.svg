@@ -1,0 +1,57 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cat-body { fill: #1e1e1e; stroke: #ffffff; stroke-width: 2; }
+    .cat-face { fill: none; stroke: #ffffff; stroke-width: 2; }
+    .cat-eye { fill: #ffffff; }
+    .cat-pupil { fill: #1e1e1e; }
+    .cat-ear { fill: #1e1e1e; stroke: #ffffff; stroke-width: 2; }
+    .cat-whisker { stroke: #ffffff; stroke-width: 1.5; }
+    .cat-paw { fill: #1e1e1e; stroke: #ffffff; stroke-width: 2; }
+    .glasses { fill: none; stroke: #ffffff; stroke-width: 1.5; }
+    .glasses-arm { stroke: #ffffff; stroke-width: 1.5; }
+    .pencil-body { stroke: #ffffff; stroke-width: 2; }
+    .pencil-tip { fill: #FFC107; }
+    .pencil-end { fill: #ffffff; }
+  </style>
+  
+  <!-- Cat Ears -->
+  <path class="cat-ear" d="M30,30 L20,10 L40,20 Z" />
+  <path class="cat-ear" d="M70,30 L80,10 L60,20 Z" />
+  
+  <!-- Cat Head -->
+  <circle class="cat-body" cx="50" cy="45" r="30" />
+  
+  <!-- Glasses -->
+  <circle class="glasses" cx="35" cy="40" r="8" />
+  <circle class="glasses" cx="65" cy="40" r="8" />
+  <line class="glasses" x1="43" y1="40" x2="57" y2="40" />
+  <line class="glasses-arm" x1="27" y1="40" x2="20" y2="35" />
+  <line class="glasses-arm" x1="73" y1="40" x2="80" y2="35" />
+  
+  <!-- Cat Eyes -->
+  <ellipse class="cat-eye" cx="35" cy="40" rx="3" ry="4" />
+  <ellipse class="cat-eye" cx="65" cy="40" rx="3" ry="4" />
+  <circle class="cat-pupil" cx="35" cy="38" r="1" />
+  <circle class="cat-pupil" cx="65" cy="38" r="1" />
+  
+  <!-- Cat Nose -->
+  <path class="cat-face" d="M50,50 L45,55 L55,55 Z" />
+  
+  <!-- Cat Mouth -->
+  <path class="cat-face" d="M45,60 Q50,65 55,60" />
+  
+  <!-- Cat Whiskers -->
+  <line class="cat-whisker" x1="40" y1="55" x2="20" y2="50" />
+  <line class="cat-whisker" x1="40" y1="58" x2="20" y2="58" />
+  <line class="cat-whisker" x1="60" y1="55" x2="80" y2="50" />
+  <line class="cat-whisker" x1="60" y1="58" x2="80" y2="58" />
+  
+  <!-- Cat Paw (holding a pencil) -->
+  <circle class="cat-paw" cx="40" cy="85" r="10" />
+  <line class="cat-face" x1="40" y1="75" x2="50" y2="65" />
+  
+  <!-- Pencil -->
+  <line class="pencil-body" x1="35" y1="80" x2="25" y2="90" />
+  <polygon class="pencil-tip" points="25,90 22,93 20,90 23,87" />
+  <polygon class="pencil-end" points="20,90 19,91 22,93" />
+</svg>
